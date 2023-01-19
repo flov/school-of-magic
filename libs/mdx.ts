@@ -13,9 +13,6 @@ import { TOKEN_CLASSNAME_MAP } from '~/constant'
 import type { BlogFrontMatter, MdxFileData, MdxFrontMatter, TOC, UnistNodeType } from '~/types'
 import { dateSortDesc } from '~/utils/date'
 import { formatSlug, getAllFilesRecursively } from './files'
-import { remarkCodeBlockTitle } from './remark-code-block-title'
-import { remarkImgToJsx } from './remark-img-to-jsx'
-import { remarkTocHeading } from './remark-toc-heading'
 
 export async function getFileBySlug(type: string, slug: string): Promise<MdxFileData> {
   let root = process.cwd()
@@ -63,13 +60,6 @@ export async function getFileBySlug(type: string, slug: string): Promise<MdxFile
        * The syntax might look weird, but it protects you in case we add/remove plugins in the future.
        * Ref: https://github.com/kentcdodds/mdx-bundler#mdxoptions
        */
-      options.remarkPlugins = [
-        ...(options.remarkPlugins || []),
-        [remarkTocHeading, { exportRef: toc }],
-        remarkGFM,
-        remarkCodeBlockTitle,
-        remarkImgToJsx,
-      ]
       options.rehypePlugins = [
         ...(options.rehypePlugins || []),
         rehypeSlug,

@@ -16,7 +16,7 @@ export function Header({ onToggleNav }: { onToggleNav: () => void }) {
             <div className="umami--click--logo flex items-center justify-between">
               <div className="mr-3 flex items-center justify-center">
                 <NextImage
-                  src="/static/images/logo.jpg"
+                  src="/static/images/logo.png"
                   alt="Leo's Blog logo"
                   width={45}
                   height={45}
@@ -43,7 +43,6 @@ export function Header({ onToggleNav }: { onToggleNav: () => void }) {
               )
             })}
           </div>
-          <AnalyticsLink />
           <ThemeSwitcher />
           <button
             className="umami--click--mobile-nav-toggle ml-2 mr-1 h-8 w-8 rounded sm:hidden"

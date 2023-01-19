@@ -22,8 +22,7 @@ export function AuthorLayout({ children }: AuthorLayoutProps) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{description}</p>
         </div>
         <div className="items-start space-y-2 pt-8 xl:grid xl:grid-cols-3 xl:space-y-0">
-          <ProfileCard />
-          <div className="prose prose-lg max-w-none pb-8 dark:prose-dark xl:col-span-2 xl:pl-10">
+          <div className="prose prose-lg max-w-none pb-8 dark:prose-dark xl:col-span-2">
             {children}
           </div>
         </div>

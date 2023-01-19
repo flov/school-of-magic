@@ -55,14 +55,13 @@ export function ProfileCard() {
         className="flex flex-col overflow-hidden bg-white shadow-cyan-100/50 transition-all duration-200 ease-out dark:bg-dark dark:shadow-cyan-700/50 xl:rounded-lg xl:shadow-lg"
       >
         <Image
-          src={'/static/images/logo.jpg'}
+          src={'/static/images/logo.png'}
           alt="avatar"
           width={550}
           height={350}
           className="object-cover"
           style={{ objectPosition: '50% 16%', width: 340, height: 220 }}
         />
-        <SpotifyNowPlaying />
         <ProfileCardInfo />
         <span className="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
       </div>
