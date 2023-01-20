@@ -91,9 +91,7 @@ export default function Home({ posts }: { posts: BlogFrontMatter[] }) {
               Each school has a theme and uniform. Your avatar will be wearing the costumes of the
               school and using its magic colors as determined by the school founders.
             </p>
-            <p>
-              ... to be continued
-            </p>
+            <p>... to be continued</p>
           </div>
         </div>
       </div>
