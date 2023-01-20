@@ -7,7 +7,7 @@ export function Greeting() {
   )
   return (
     <div className={className}>
-      Hello wizards and wiches! <i className="twa twa-waving-hand"></i>
+      Hello wizards and wiches! <i className="twa twa-mage"></i>
     </div>
   )
 }

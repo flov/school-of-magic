@@ -1,1 +1,4 @@
-export let headerNavLinks = [{ href: '/about', title: 'About' }]
+export let headerNavLinks = [
+  { href: '/about', title: 'About' },
+  { href: '/', title: 'Home' },
+]

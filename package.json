@@ -31,6 +31,8 @@
     "postcss-loader": "^7.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-grid-gallery": "^1.0.0",
+    "react-image-lightbox": "^5.1.4",
     "react-share": "^4.4.1",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^6.1.1",
